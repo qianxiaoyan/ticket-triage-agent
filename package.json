@@ -1,0 +1,16 @@
+{
+  "name": "ticket-triage-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "RAG + tool-using agent that triages support tickets, drafts cited replies, and escalates when uncertain. Ships with an offline rule-based baseline and an evaluation harness.",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "demo": "node --experimental-strip-types src/cli.ts demo",
+    "eval": "node --experimental-strip-types src/cli.ts eval",
+    "triage": "node --experimental-strip-types src/cli.ts triage --text",
+    "typecheck": "tsc --noEmit"
+  }
+}

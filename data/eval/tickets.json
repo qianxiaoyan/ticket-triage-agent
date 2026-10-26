@@ -1,0 +1,182 @@
+[
+  {
+    "id": "T-001",
+    "subject": "Invoice shows the wrong company name",
+    "body": "Our latest invoice has our old legal entity name on it. Accounting rejected it. Can you reissue it with the correct name?",
+    "customerTier": "pro",
+    "expectedCategory": "billing",
+    "expectedPriority": "P3",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-002",
+    "subject": "Card was declined, now getting dunning emails",
+    "body": "Our corporate card expired and the payment failed. We updated the card yesterday but we still get dunning emails and the banner says the workspace will be downgraded.",
+    "customerTier": "pro",
+    "expectedCategory": "billing",
+    "expectedPriority": "P2",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-003",
+    "subject": "Want to cancel and get a refund, still in trial window",
+    "body": "We started 9 days ago and only used a small part of the quota. We would like to cancel and get our money back.",
+    "customerTier": "free",
+    "expectedCategory": "refund",
+    "expectedPriority": "P3",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-004",
+    "subject": "Cannot log in, 2FA codes never arrive",
+    "body": "Nobody on our team can log in. The two-factor SMS codes never arrive and one account is now locked. We cannot use the product at all right now.",
+    "customerTier": "enterprise",
+    "expectedCategory": "account",
+    "expectedPriority": "P1",
+    "expectedEscalate": true
+  },
+  {
+    "id": "T-005",
+    "subject": "Hitting 429 on our production integration",
+    "body": "We are getting HTTP 429 with Retry-After during peak hours. Our sync job fails and we fall behind. Default limit of 600 per minute is not enough for us.",
+    "customerTier": "pro",
+    "expectedCategory": "api",
+    "expectedPriority": "P2",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-006",
+    "subject": "How do I rotate an API key without breaking production?",
+    "body": "We think a key was shared in a screenshot. What is the safe order to rotate it so our services keep running?",
+    "customerTier": "pro",
+    "expectedCategory": "api",
+    "expectedPriority": "P2",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-007",
+    "subject": "Unauthorized login from an unknown IP",
+    "body": "We see a login from a country we do not operate in, and the user says they did not do it. This looks like account takeover. Please help immediately.",
+    "customerTier": "enterprise",
+    "expectedCategory": "account",
+    "expectedPriority": "P1",
+    "expectedEscalate": true
+  },
+  {
+    "id": "T-008",
+    "subject": "Charged twice this month",
+    "body": "Our bank statement shows two charges of the same amount on the same day. Invoice number INV-88421. Please refund the duplicate.",
+    "customerTier": "pro",
+    "expectedCategory": "billing",
+    "expectedPriority": "P2",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-009",
+    "subject": "Annual plan refund request after 45 days",
+    "body": "We bought the annual plan 45 days ago and the team stopped using it after a reorg. Can we get a prorated refund for the remaining months?",
+    "customerTier": "pro",
+    "expectedCategory": "refund",
+    "expectedPriority": "P3",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-010",
+    "subject": "Transfer workspace ownership to a new admin",
+    "body": "Our previous owner left the company. How do we transfer ownership to the new IT lead?",
+    "customerTier": "pro",
+    "expectedCategory": "account",
+    "expectedPriority": "P3",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-011",
+    "subject": "Webhook deliveries are failing",
+    "body": "Every webhook delivery is marked failed. Our endpoint sometimes takes 8 seconds to respond. Do we need to change something on our side?",
+    "customerTier": "pro",
+    "expectedCategory": "api",
+    "expectedPriority": "P2",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-012",
+    "subject": "Feature request: dark mode for the dashboard",
+    "body": "Our team works late and the bright dashboard is hard on the eyes. Any chance of a dark theme?",
+    "customerTier": "free",
+    "expectedCategory": "other",
+    "expectedPriority": "P3",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-013",
+    "subject": "Please delete all our data, GDPR request",
+    "body": "Under GDPR we request deletion of all workspace data for our account. Please confirm in writing when it is complete.",
+    "customerTier": "pro",
+    "expectedCategory": "account",
+    "expectedPriority": "P2",
+    "expectedEscalate": true
+  },
+  {
+    "id": "T-014",
+    "subject": "Billing page is down and we cannot use the product",
+    "body": "The billing and admin pages return 500 for every user in our workspace. All users affected. We cannot use the product right now and we have a board meeting in two hours.",
+    "customerTier": "enterprise",
+    "expectedCategory": "billing",
+    "expectedPriority": "P1",
+    "expectedEscalate": true
+  },
+  {
+    "id": "T-015",
+    "subject": "We filed a chargeback and now the workspace is suspended",
+    "body": "Our finance team disputed the last charge because the invoice was wrong. Now the workspace is suspended. We want it back today.",
+    "customerTier": "pro",
+    "expectedCategory": "refund",
+    "expectedPriority": "P2",
+    "expectedEscalate": true
+  },
+  {
+    "id": "T-016",
+    "subject": "Sandbox API key does not work against production",
+    "body": "I generated a key in the sandbox and our staging service gets 401 against the production endpoint. Is there a separate key per environment?",
+    "customerTier": "free",
+    "expectedCategory": "api",
+    "expectedPriority": "P3",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-017",
+    "subject": "CSV export of workspace data is taking forever",
+    "body": "I started an export two days ago and the download link expired. The workspace is large. Is there a faster way?",
+    "customerTier": "pro",
+    "expectedCategory": "account",
+    "expectedPriority": "P3",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-018",
+    "subject": "Can I speak to a human about enterprise pricing",
+    "body": "We are evaluating vendors and I would rather talk to a real person than read docs. Please have someone contact me.",
+    "customerTier": "free",
+    "expectedCategory": "other",
+    "expectedPriority": "P3",
+    "expectedEscalate": true
+  },
+  {
+    "id": "T-019",
+    "subject": "Need the VAT ID added to last month's invoice",
+    "body": "Our finance department needs our VAT number on the invoice issued last month so we can self-assess VAT. Is that possible?",
+    "customerTier": "pro",
+    "expectedCategory": "billing",
+    "expectedPriority": "P3",
+    "expectedEscalate": false
+  },
+  {
+    "id": "T-020",
+    "subject": "API returning 500 for every request in production",
+    "body": "All customers are affected. Every API call returns 500 since 09:12 UTC. This is a production outage for us and our status page is red.",
+    "customerTier": "pro",
+    "expectedCategory": "api",
+    "expectedPriority": "P1",
+    "expectedEscalate": false
+  }
+]
